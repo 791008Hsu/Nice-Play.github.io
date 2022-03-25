@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../20220323-文惠/css/basic.css">
+	<link rel="stylesheet" type="text/css" href="../20220323-文惠/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../20220323-文惠/css/test-0323.css">
+	<style>
+		#customers {
+			font-family: Arial, Helvetica, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		#customers td,
+		#customers th {
+			border: 1px solid #ddd;
+			padding: 8px;
+		}
+
+		#customers tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		#customers tr:hover {
+			background-color: #ddd;
+		}
+
+		#customers th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			background-color: aqua;
+			color: blueviolet;
+		}
+
+		#rcorners1 {
+			border-radius: 25px;
+			background: #73AD21;
+			padding: 20px;
+			width: 70px;
+			height: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!--
+	<script>
+		var my_btn = document.getElementById("btn");
+		my_btn.addEventListener("click", function () {
+
+			var is_confirm = confirm("是否確定要提交？");
+			if (is_confirm) {
+				alert("已收到您的回覆");
+			} else {
+				alert("您已取消");
+			}
+
+		});
+	</script>
+	-->
+</head>
+
+
+<body>
+	<div id="container">
+		<!--導覽列-->
+		<div id="header">
+			<div id="logo">
+				<a href="../20220323-文惠/index.html"></a>
+			</div>
+			<!--
+        <h1><span>Nice Play之棒球迷7嘴8舌區</span></h1>
+		-->
+			<div class="nav">
+				<ul>
+					<li><a href="#">最新消息</a>
+						<ul>
+							<li><a href="../20220323-文惠/7.html">賽事新聞</a></li>
+							<li><a href="../20220323-文惠/8.html">新聞公告</a></li>
+						</ul>
+					</li>
+					<li><a href="../20220323-文惠/2.html">每月賽程</a></li>
+					<li><a href="../20220323-文惠/3.html">球員介紹</a>
+						<ul>
+							<li><a href="../20220323-文惠/9.html">中信兄弟</a></li>
+							<li><a href="../20220323-文惠/10.html">統一獅</a></li>
+							<li><a href="../20220323-文惠/11.html">樂天桃猿</a></li>
+							<li><a href="../20220323-文惠/12.html">富邦悍將</a></li>
+							<li><a href="../20220323-文惠/13.html">味全龍</a></li>
+						</ul>
+					</li>
+					<li><a href="../20220323-文惠/4.html">球迷交流</a>
+						<ul>
+							<li><a href="../20220323-文惠/14.html">討論區</a></li>
+							<li><a href="../20220323-文惠/15.html">聊天室</a></li>
+						</ul>
+					</li>
+					<li><a href="../20220323-文惠/5.html">影音專區</a>
+						<ul>
+							<li><a href="../20220323-文惠/16.html">完整賽事</a></li>
+							<li><a href="../20220323-文惠/17.html">精彩短片</a></li>
+						</ul>
+					</li>
+					<li><a href="../20220323-文惠/6.html">加入我們</a>
+						<ul>
+							<li><a href="../20220323-文惠/18.html">招募幹部</a></li>
+							<li><a href="">聯絡我們</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<!--內容-->
+	<div class="post_title">討論區
+		<div class="row">
+			<span type="button" id="btn-1">發表文章</span>
+			<!--這裡的id名稱因為和下面撞了，所以這個就改成btn-1-->
+			<a href="/member/login?height=260&amp;width=580&amp;modal=true" id="login_for_reply"
+				class="headerLoginButton cboxElement">&nbsp;(<a href="6.html">請先登入會員&amp;加入會員)</a></a>
+			<table id="customers">
+				<tr>
+					<td>主題</td>
+					<td></td>
+					<td>作者</td>
+					<td>最新回應</td>
+				</tr>
+				<tr>
+					<th>【公告】</th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th>【重要】2022年新球季將在4/2開打</th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+
+	<div class="page-normal">
+		<span class="page-current">1</span>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<a href="#">5</a>
+		<a href="#">6</a>
+		<a href="#">7</a>
+		<a href="#">8</a>
+		<a href="#">9</a>
+		<a href="#">10</a>
+		<a href="#">&gt; &gt;</a>
+	</div>
+
+
+	<div class="row">
+		<!--這行的row是對齊用的，沒加也沒差，加了比較整齊。-->
+		<p>快速發帖</p>
+		<form action="/action_page.php">
+			<select id="cars" name="cars">
+				<option value="volvo">公告</option>
+				<option value="saab">新聞</option>
+				<option value="fiat">交流</option>
+				<option value="audi">其他</option>
+			</select>
+			<textarea cols="110"></textarea><br>
+			<textarea cols="120" rows="10"></textarea><br>
+			<button type="button" id="btn">提交</button>
+		</form>
+	</div>
+	<script>
+		var my_btn = document.getElementById("btn");
+		my_btn.addEventListener('click', function () {
+			var is_confirm = confirm("是否確定要提交？");
+			if (is_confirm) {
+				alert("已收到您的回覆");
+			} else {
+				alert("您已取消");
+			}
+
+		});
+	</script>
+
+	<div id="footer" class="post_text">
+
+		<p>CopyrightⒸ[2022] Nice Play.All rights reserved</p>
+		<div class="footer-imgs">
+			<img src="../20220323-文惠/images/facebook.png" alt="facebook">
+			<img src="../20220323-文惠/images/instagram.png" alt="instagram">
+			<img src="../20220323-文惠/images/line.png" alt="line">
+			<img src="../20220323-文惠/images/twitter.png" alt="twitter">
+		</div>
+	</div>
+
+
+</body>
+
+</html>
